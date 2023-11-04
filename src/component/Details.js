@@ -120,3 +120,7 @@ function DetailCompo() {
     )
 }
 export default DetailCompo
+
+    )
+}
+export default DetailCompo
