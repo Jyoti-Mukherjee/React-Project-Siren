@@ -12,8 +12,10 @@ function HollyWood() {
                     return (
                         <div className="hollydata" key={index}>
                             <h1 className="headingholly">{item.name}</h1>
-                            <NavLink className='navlinktwo' to={`/details/${item.id}` }><img src={item.image}  className="imagehollytop" alt="Not Found" /></NavLink>
-                            <p className="hollypara">{item.para.slice(0, 190)}...</p>
+                            <img src={item.image}  className="imagehollytop" alt="Not Found" />
+                            <NavLink className='navlinktwo' to={`/details/${item.id}` }> <p className="hollypara">{item.para.slice(0, 190)}</p></NavLink>
+                            
+    
                         </div>
                     )
                 })}
@@ -32,8 +34,9 @@ function HollyWood() {
                         return (
                             <div key={index} className="hollyunderdiv">
                                <h1 className="underdivheading">{item.name.slice(0,10)}</h1>  
-                               <NavLink className='navlinktwo' to={`/details/${item.id}` }>       <img src={item.image} className="underdivimage" alt="Not Found"/></NavLink>
-                                <p className="underdivpara">{item.para.slice(0,400)}</p>
+                               <img src={item.image} className="underdivimage" alt="Not Found"/>
+                               <NavLink className='navlinktwo' to={`/details/${item.id}` }><p className="underdivpara">{item.para.slice(0,400)}</p> </NavLink>
+                                
                             </div>
                         )
                     })}
@@ -103,3 +106,4 @@ function HollyWood() {
     )
 }
 export default HollyWood;
+
