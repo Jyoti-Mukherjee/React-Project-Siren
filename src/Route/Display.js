@@ -6,14 +6,10 @@ import Food from "../component/Food";
 import TechCompo from "../component/Technologogy";
 import ContextStore from "../Store/Data";
 import { BrowserRouter, NavLink, Route, Routes } from "react-router-dom";
-import './style.css'
+import './style.css';
 import DetailCompo from "../component/Details";
 import NewDetails from "../component/AddnewDetails";
 import { useState } from "react";
-
-
-
-
 function Display() {
 
     const [count, setCount] = useState(false)
@@ -24,10 +20,6 @@ function Display() {
               <div className="navtwo">
                 <span className="route">The</span><span className="siren">Siren</span>
                 </div>
-
-
-
-
                 <div
                     onClick={() => setCount(!count)}
                     className="display"
