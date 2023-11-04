@@ -141,20 +141,23 @@
 .underdivfirst:hover {
 
     box-shadow: 2px 2px 20px rgb(16, 201, 247);
+
 }
 
 .parahome {
     width: 25vw;
-    font-size: 1.3em;
+    font-size: 1.2em;
     position: relative;
-    left: 2vw;
-}
+    left: 0vw;
+    color:#1e2fe6;
+} 
 
 
 .thirdtop {
     display: flex;
     justify-content: space-around;
     gap: 20px;
+    
 
 }
 
@@ -1796,7 +1799,6 @@
     display: none;
 
 }
-
 
 
 
