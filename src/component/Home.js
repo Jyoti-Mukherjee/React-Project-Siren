@@ -81,7 +81,7 @@ function HomeCompo() {
                                         <span className="headingone">{item.name.slice(0,10)}</span>
 
                                         <span className="paraone">{item.para.slice(0, 100)}</span>
-                                        <NavLink className='navlinktwo' to={`/details/${item.id}` }>     <img src={item.image} className="imageone" alt="Not Found"/></NavLink>
+                                        <NavLink className='navlinktwo' to={`/details/${item.id}` }><img src={item.image} className="imageone" alt="Not Found"/></NavLink>
                                     </div>
                                 </div>
                             </>
@@ -99,9 +99,10 @@ function HomeCompo() {
                                 <div key={index} className="ddddd">
 
                                     <div className="data">
-                                        <span className="headingtwo">{item.name.slice(0, 10)}</span>
+                                        <span className="headingtwo">{item.name.slice(0, 10)}</span> 
+                                        <span  className="number">{index +1}</span>
                                         <img src={item.image} className="imagetwo" alt="Not Found"/>
-                                        <NavLink className='navlinktwo' to={`/details/${item.id}` }>     <p className="paratwo">{item.para.slice(0, 100)}... <span  className="number">{index +1}</span></p>    </NavLink>
+                                        <NavLink className='navlinktwo' to={`/details/${item.id}` }>     <p className="paratwo">{item.para.slice(0, 100)}...</p></NavLink>
                                         
 
                                     </div>
@@ -123,13 +124,12 @@ function HomeCompo() {
             <div className="footer">
 
 <div className="logoshome">
-<img className="logo" src="https://1000logos.net/wp-content/uploads/2016/11/Facebook-logo.png" alt="Not Found"/>
-<img className="logo" src="http://1000logos.net/wp-content/uploads/2017/02/New-Instagram-logo.jpg" alt="Not Found"/>
-<img className="logo" src="https://www.aps.edu/sapr/images/pnglot.comtwitterbirdlogopng139932.png/image" alt="Not Found"/>
-<img className="logo" src="https://sguru.org/wp-content/uploads/2018/02/Logo-LinkedIn-Round.png" alt="Not Found"/>
+<img className="logo" src="http://1000logos.net/wp-content/uploads/2017/02/New-Instagram-logo.jpg" alt="Not found"/>
+<img className="logo" src="https://www.aps.edu/sapr/images/pnglot.comtwitterbirdlogopng139932.png/image" alt=""/>
+<img className="logo" src="https://sguru.org/wp-content/uploads/2018/02/Logo-LinkedIn-Round.png" alt=""/>
 
 </div>
-<div className="location">  <img className="renlogoonehome" src="https://tse2.mm.bing.net/th?id=OIP.jI9rruGSAQNGmMicjyVJFAHaI7&pid=Api&P=0&h=180" alt="Not Found"/></div> <span className="lochome">Kolkata, West Bengal</span>
+<div className="location">  <img className="renlogoonehome" src="https://tse2.mm.bing.net/th?id=OIP.jI9rruGSAQNGmMicjyVJFAHaI7&pid=Api&P=0&h=180" alt=""/></div> <span className="lochome">Kolkata, West Bengal</span>
 
 
 
