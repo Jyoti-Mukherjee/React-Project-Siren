@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { Store } from "../Store/Data";
 import { NavLink, useNavigate, useParams } from "react-router-dom";
-import './style.css'
+import './style.css';
+import './Responsive.css';
 
 
 function DetailCompo() {
@@ -28,7 +29,7 @@ function DetailCompo() {
        <div className="parent">
         
         <div className="innerman">
-        <img src="https://st1.bollywoodlife.com/wp-content/uploads/2020/09/Aishwarya-Rai-Bachchan.jpg" alt="Not Found" className="men"/><span className="balam"> Jyoti Mukherjee</span>
+        <img src="https://st1.bollywoodlife.com/wp-content/uploads/2020/09/Aishwarya-Rai-Bachchan.jpg" alt="Not Found" className="men"/><span className="jyoti"> Jyoti Mukherjee</span>
         <h4 className="time">Nov 2,2023</h4>
         </div>
         <div className="outerlogo">
