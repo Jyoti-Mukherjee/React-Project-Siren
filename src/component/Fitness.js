@@ -15,8 +15,9 @@ function FitNess(){
                     return (
                         <div className="fitdata" key={index}>
                             <h1 className="headingfit">{item.name}</h1>
-                            <NavLink className='navlinktwo' to={`/details/${item.id}` }><img src={item.image}  className="imagefittop" alt="Not Found"/></NavLink>
-                            <p className="fitpara">{item.para.slice(0, 190)}...</p>
+                            <img src={item.image}  className="imagefittop" alt="Not Found"/>
+                            <NavLink className='navlinktwo' to={`/details/${item.id}` }> <p className="fitpara">{item.para.slice(0, 190)}...</p></NavLink>
+                            
                         </div>
                     )
                 })}
@@ -29,29 +30,40 @@ function FitNess(){
 
             <div className="fitone">
 
-                <div>
+                <div className="A">
                     <h2 className="fitdtopstories">Top Stories</h2>
 
                     {fitdata.filter((item) => item.category==='Fitness').map((item, index) => {
                         return (
-                            <div key={index} className="fitunderdiv">
-                                <h1 className="underdivheadingfit">{item.name.slice(0,10)}</h1>
-                                <NavLink className='navlinktwo' to={`/details/${item.id}` }>   <img src={item.image} className="underdivimagefit" alt="Not Found" /></NavLink>
-                                <p className="underdivparafit">{item.para.slice(0, 400)}</p>
+                            <div key={index} className="fitunderdiv">   
+                               <div className="storiesimage">
+                                 <img src={item.image} className="underdivimagefit" alt="Not Found" />
+                                 </div>
+
+                                
+                                <div className="itemone">
+                                    
+                                <h1 className="underdivheadingtwofit1">{item.name}</h1>
+                                <NavLink className='navlinktwo' to={`/details/${item.id}` }><p className="underdivparafit">{item.para.slice(0, 150)}</p></NavLink> 
+                                </div>
                             </div>
                         )
                     })}
                 </div>
 
-
-                <div>
+                <div className="itemtwo">
+                    
                     <h2 className="fitdtoppost">Top Postes</h2>
                     {fitdata.filter((item) => item.id >=31 && item.id < 46).map((item, index) => {
                         return (
                             <div key={index} className="underdivtwofit">
-                                <h1 className="underdivheadingtwofit">{item.name.slice(0,10)}...</h1>
-                                <NavLink className='navlinktwo' to={`/details/${item.id}` }>    <img className="underdivimagetwofit" src={item.image} alt="Not Found"/></NavLink>
-                                <p className="underdivparatwofit" >{item.para.slice(0, 105)}... <span>{index +1}</span></p>
+                                <div>
+                                <img className="underdivimagetwofit" src={item.image} alt="Not Found"/>
+                                 </div>
+                                <div className="itemthree"><h1 className="underdivheadingtwofit">{item.name}</h1> 
+                                   
+                                  <NavLink className='navlinktwo' to={`/details/${item.id}` }><p className="underdivparatwofit" >{item.para.slice(0, 120)}... <span>{index +1}</span></p></NavLink>
+                                </div>
 
 
                             </div>
