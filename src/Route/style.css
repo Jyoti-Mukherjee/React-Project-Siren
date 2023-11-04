@@ -22,11 +22,9 @@
 .number {
     font-size: 1.5em;
     color: #2d1ff5;
-    position: relative;
-    /* left: 25vh; */
-    /* width: 8vw; */
+    /* position: relative; */
     top: 1vw;
-
+    margin-left: 80vh;
 }
 
 .homeimage {
@@ -202,16 +200,17 @@
 
 .advisment {
     border: 2px solid black;
-    height: 95vh;
-    width: 28vw;
+    height: 155vh;
+    width: 35vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    /* position: relative; */
     top: 5vh;
     left: 5vw;
-    background-color:rgba(0, 255, 255, 0.297);
+    background-color:rgba(108, 250, 250, 0.087);
 }
+
 
 .data {
    
@@ -282,10 +281,11 @@
 
 }
 
-.location {
-    /* position: absolute; */
-    left: 5vw;
-    top: 4vh;
+.renlogoonehome {
+    position: absolute;
+    left: 2vw;
+    top:2vh;
+    height:4vh;
 }
 
 .lochome {
@@ -301,7 +301,7 @@
 .logoonephonehome {
     height: 4vh;
     position: relative;
-    right: 40vw;
+    right: 36.5vw;
     top: 13vh;
     /* border: 5px solid black; */
     color: rgb(28, 140, 239);
@@ -324,7 +324,7 @@
 .logoonemailhome {
     height: 5vh;
     position: relative;
-    right: 43vw;
+    right: 39vw;
     top: 20vh;
     color: red;
 }
@@ -503,9 +503,8 @@
 }
 
 .footerthree {
-    background-color: rgba(0, 0, 0, 0.742);
+    background-color: rgba(48, 47, 49, 0.742);
     height: 35vh;
-    /* width: 100vw; */
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -571,7 +570,7 @@
 .logoonephoneholly {
     height: 4vh;
     position: relative;
-    right: 40vw;
+    right: 37.5vw;
     top: 13vh;
     /* border: 5px solid black; */
     color: aliceblue;
@@ -593,7 +592,7 @@
 .logoonemailholly {
     height: 5vh;
     position: relative;
-    right: 43vw;
+    right: 40vw;
     top: 20vh;
     color: red;
 }
@@ -805,7 +804,7 @@
     font-weight: bold;
     position: absolute;
     top: 5vh;
-    left: 10vw;
+    left: 8vw;
     color: whitesmoke;
 
 }
@@ -813,7 +812,7 @@
 .logoonephonebolly {
     height: 4vh;
     position: relative;
-    right: 40vw;
+    right: 38.5vw;
     top: 13vh;
     /* border: 5px solid black; */
     color: aliceblue;
@@ -835,7 +834,7 @@
 .logoonemailbolly {
     height: 5vh;
     position: relative;
-    right: 43vw;
+    right: 41vw;
     top: 20vh;
     color: red;
 }
@@ -1120,7 +1119,7 @@
 .logoonephonefit {
     height: 4vh;
     position: relative;
-    right: 40vw;
+    right: 37.5vw;
     top: -1vh;
     /* border: 5px solid black; */
     color: aliceblue;
@@ -1142,7 +1141,7 @@
 .logoonemailfit {
     height: 5vh;
     position: relative;
-    right: 43vw;
+    right: 40vw;
     top: 6vh;
     color: red;
 }
@@ -1386,7 +1385,7 @@
 .logoonephonefood {
     height: 4vh;
     position: relative;
-    right: 40vw;
+    right: 37.5vw;
     top: -1vh;
     /* border: 5px solid black; */
     color: aliceblue;
@@ -1408,7 +1407,7 @@
 .logoonemailfood {
     height: 5vh;
     position: relative;
-    right: 43vw;
+    right: 40vw;
     top: 6vh;
     color: red;
 }
@@ -1687,7 +1686,7 @@
 .logoonephone {
     height: 5vh;
     position: relative;
-    right: 40vw;
+    right: 37.5vw;
     top: 22vh;
     color: aliceblue;
     background-color: aqua;
@@ -1708,7 +1707,7 @@
 .logoonemail {
     height: 5vh;
     position: relative;
-    right: 43vw;
+    right: 40.2vw;
     top: 8vh;
     color: red;
 }
@@ -1718,7 +1717,7 @@
     position: absolute;
     color: whitesmoke;
     top: 8vh;
-    left: 10vw
+    left: 10vw;
 }
 
 .logosfood {
@@ -1797,6 +1796,7 @@
     display: none;
 
 }
+
 
 
 
