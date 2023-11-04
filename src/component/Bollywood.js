@@ -27,14 +27,16 @@ const BollyWood = () => {
             <div className="bollyone">
 
                 <div className="stories">
+                    
                     <h2 className="bollytopstories">Top Stories</h2>
 
                     {bollydata.filter((item) => item.category==='BollyWood').map((item, index) => {
                         return (
                          <div key={index} className="bollyunderdiv">
-                                <h1 className="underdivheadingbolly">{item.name}</h1>
-                                <NavLink className='navlinktwo' to={`/details/${item.id}` }><img src={item.image} className="underdivimagebolly" alt={item.error}/></NavLink>
-                                <p className="underdivparabolly">{item.para.slice(0, 300)}</p>
+                                <h1 className="itemnamebollywood">{item.name}</h1>
+                                <img src={item.image} className="underdivimagebolly" alt={item.error}/>
+                                <NavLink className='navlinktwo' to={`/details/${item.id}` }><p className="underdivparabolly">{item.para.slice(0, 105)}</p></NavLink>
+                                
                             </div> 
                         )
                     })}
@@ -49,11 +51,8 @@ const BollyWood = () => {
 
 
                                 <h1 className="underdivheadingtwobolly">{item.name}</h1>
-                                <NavLink className='navlinktwo' to={`/details/${item.id}` }>  <img className="underdivimagetwobolly" src={item.image} alt={item.error}/></NavLink>
-                                <p className="underdivparatwobolly" >{item.para.slice(0, 105)}...
-                                <span>{index +1}</span></p>
-
-
+                                <img className="underdivimagetwobolly" src={item.image} alt={item.error}/>
+                                <NavLink className='navlinktwo' to={`/details/${item.id}` }><p className="underdivparatwobolly" >{item.para.slice(0, 105)}<span>{index +1}</span></p> </NavLink>
                             </div>
                         )
 
