@@ -55,13 +55,12 @@ function HomeCompo() {
 
                         <div className="underdivfirst" key={index}>
                             <h1 className="namecard">{item.name}</h1>
-                            <NavLink to={`/details/${item.id}`}><img className="homeimage" src={item.image} alt="Not Found" /></NavLink>
-                            <span className="parahome" >{item.para.slice(0,250)}...</span>
+                            <img className="homeimage" src={item.image} alt="Not Found" />
+                            <NavLink to={`/details/${item.id}`}> <span className="parahome" >{item.para.slice(0,250)}...</span></NavLink>
+                            
                         </div>
                     )
                 })}
-
-
             </div>
 
 
@@ -79,9 +78,9 @@ function HomeCompo() {
                                     <div className="datatwo">
 
 
-                                        <span className="headingone">{item.name.slice(0,10)}...44</span>
+                                        <span className="headingone">{item.name.slice(0,10)}</span>
 
-                                        <span className="paraone">{item.para.slice(0, 225)}...</span>
+                                        <span className="paraone">{item.para.slice(0, 100)}</span>
                                         <NavLink className='navlinktwo' to={`/details/${item.id}` }>     <img src={item.image} className="imageone" alt="Not Found"/></NavLink>
                                     </div>
                                 </div>
@@ -92,7 +91,7 @@ function HomeCompo() {
                 </div>
 
                 <div className="toppost">
-                    <h2 className="post">Top Postes</h2>
+                    <h2 className="post">Top Posts</h2>
                     {datahome.filter((item) => item.id % 12 === 0).map((item, index) => {
                         return (
                             <>
@@ -101,8 +100,9 @@ function HomeCompo() {
 
                                     <div className="data">
                                         <span className="headingtwo">{item.name.slice(0, 10)}</span>
-                                        <NavLink className='navlinktwo' to={`/details/${item.id}` }>         <img src={item.image} className="imagetwo" alt="Not Found"/></NavLink>
-                                        <p className="paratwo">{item.para.slice(0, 100)}... <span  className="number">{index +1}</span></p>
+                                        <img src={item.image} className="imagetwo" alt="Not Found"/>
+                                        <NavLink className='navlinktwo' to={`/details/${item.id}` }>     <p className="paratwo">{item.para.slice(0, 100)}... <span  className="number">{index +1}</span></p>    </NavLink>
+                                        
 
                                     </div>
                                 </div>
@@ -129,7 +129,7 @@ function HomeCompo() {
 <img className="logo" src="https://sguru.org/wp-content/uploads/2018/02/Logo-LinkedIn-Round.png" alt="Not Found"/>
 
 </div>
-<div className="location">  <img className="logoonehome" src="https://tse2.mm.bing.net/th?id=OIP.jI9rruGSAQNGmMicjyVJFAHaI7&pid=Api&P=0&h=180" alt="Not Found"/></div> <span className="lochome">Kolkata, West Bengal</span>
+<div className="location">  <img className="renlogoonehome" src="https://tse2.mm.bing.net/th?id=OIP.jI9rruGSAQNGmMicjyVJFAHaI7&pid=Api&P=0&h=180" alt="Not Found"/></div> <span className="lochome">Kolkata, West Bengal</span>
 
 
 
