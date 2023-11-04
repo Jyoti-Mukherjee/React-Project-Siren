@@ -1,26 +1,30 @@
 /* **********************************media************************************ */
 
-@media only screen and (min-width:375px) and (max-width:667px) {
+@media screen and (min-width:375px) and (max-width:667px) {
 
     .fa-solid {
         display: block;
         float: right;
         font-size: 3em;
+        background-color: #0a0af9;
     }
 
     .display {
-        position: absolute;
+        /* position: absolute; */
         right: 1vw;
         top: 1vh;
     }
 
-    body {
-        width: 80vw;
+    .body {
+        /* width: 100vw; */
+        /* margin-left: 10px; */
+        position: absolute;
+        width: 100vw;
     }
 
     .navbar-listResponsive {
         display: block;
-        position: fixed;
+        /* position: fixed; */
         right: 0vw;
         top: 5vh;
         line-height: 10vh;
@@ -33,7 +37,8 @@
     }
 
     .navbar {
-        width: 95vw;
+        width: 90vw;
+        margin-left: 10px;;
     }
 
     a {
@@ -71,7 +76,7 @@
 
     .route {
         font-size: 1em;
-        margin-left: -90vw;
+        margin-left: -1vw;
         font-weight: bolder;
 
     }
@@ -103,13 +108,13 @@
     }
 
     .top {
-        width: 99vw;
+        width: 80vw;
         flex-direction: column;
     }
 
     .imagetopone {
         height: 55vh;
-        width: 90vw;
+        width: 85vw;
         border-radius: 20px;
     }
 
@@ -120,14 +125,14 @@
 
     .imagetoptwo {
         height: 60vh;
-        width: 90vw;
+        width: 83vw;
         border-radius: 20px;
-        margin-left: 5vw;
+        margin-left: 8vw;
     }
 
     .imagetopthree {
         height: 55vh;
-        width: 90vw;
+        width: 84vw;
         border-radius: 20px;
     }
 
@@ -150,7 +155,7 @@
     .parahome {
         width: 83vw;
         height: 15vh;
-        font-size: 0.8em;
+        font-size: 0.6em;
         overflow: hidden;
         font-weight: bold;
     }
@@ -165,7 +170,7 @@
         width: 99vw;
         flex-direction: column;
         align-items: center;
-        position: relative;
+        /* position: relative; */
     }
     .imageone {
         height: 30vh;
@@ -173,54 +178,62 @@
     }
 
     .datatwo {
-        width: 90vw;
+        width: 75vw;
         height: 32vh;
-        position: relative;
-        left: 2vw;
+        /* position: relative; */
+        left: 1vw;
         border-bottom: none;
+        margin: 10px;
+        background-color: #0a0af9;
+        display: flex;
     }
 
     .topstories {
         width: 95vw;
         margin-right: 5vw;
+        /* top:-10vw; */
+        display: flex;
+        flex-direction: column;
     }
 
     .latest {
-        position: relative;
+        /* position: relative; */
         left: 15vw;
         width: 70vw;
         text-align: center;
+        top:-5vw;
     }
 
     .paraone {
-        width: 38vw;
+        width: 30vw;
         height: 20vh;
-        position: relative;
+        /* position: relative; */
         font-weight: bold;
-        left: 50vw;
+        left: 22vw;
         overflow: hidden;
+       
     }
 
     .headingone {
         font-size: 1.2em;
-        position: absolute;
+        /* position: absolute; */
         left: 50vw;
         top: 4vh;
     }
 
     .data {
-        position: relative;
+        /* position: relative; */
         left: 5vw;
         height: 32vh;
         width: 90vw;
-        border-bottom: 10px solid rgb(244, 119, 16);
+        border-bottom: none;
     }
 
     .post {
         width: 68vw;
         font-size: 2em;
         margin: auto;
-        position: relative;
+        /* position: relative; */
         left: 15vw; 
     }
 
@@ -233,35 +246,37 @@
 
     .imagetwo {
         height: 28vh;
-        width: 52vw;
+        width: 45vw;
     }
 
     .headingtwo {
         width: 34vw;
-        position: absolute;
-        left: 55vw;
+        /* position: absolute; */
+        left: 45vw;
         top: 2vh;
         font-size: 1.2em;
     }
 
     .toppost {
         position: relative;
-        top: 10px;
-        width: 99vw;
+        top: -5vw;
+        width: 85vw;
         height: 210vh;
+        background-color: #0af981;
+        margin-left: 20vw;
     }
 
     .paratwo {
-        position: absolute;
-        left: 55vw;
+        /* position: absolute; */
+        left: 45vw;
         overflow: hidden;
         font-size: 0.7em;
-        width: 35vw;
+        width: 30vw;
         height: 15vh;
     }
 
     .logoshome {
-        position: relative;
+        /* position: relative; */
         top: 2vh;
         gap: 10px;
         flex-direction: column;
@@ -269,26 +284,26 @@
 
     .gotonavhome {
         width: 10vh;
-        position: relative;
+        /* position: relative; */
         left: 8vw;
     }
 
     .logoonehome {
         height: 3vh;
-        position: relative;
+        /* position: relative; */
         left: -4vw;
         top: 1vh;
 
     }
 
     .location {
-        position: absolute;
+        /* position: absolute; */
         left: 5vw;
         top: 4vh;
     }
 
     .lochome {
-        position: absolute;
+        /* position: absolute; */
         top: 5.5vh;
         left: 8vw;
         color: whitesmoke;
@@ -298,8 +313,8 @@
 
     .logoonephonehome {
         height: 2.5vh;
-        position: relative;
-        right: 43vw;
+        /* position: relative; */
+        right: 30vw;
         top: 14vh;
         color: aliceblue;
     }
@@ -313,8 +328,8 @@
 
     .logoonemailhome {
         height: 3vh;
-        position: relative;
-        right: 51vw;
+        /* position: relative; */
+        right: 40vw;
         top: 22vh;
     }
 
@@ -337,13 +352,14 @@
 
     .footer { 
         height: 40vh;
-        width: 98vw;
+        width: 85vw;
         border-radius: 5px;
         display: flex;
         justify-content: center; 
         gap: 10px;
-        position: relative;
-        left: 1vw;
+        /* position: relative; */
+        left: 6vw;
+        top:-20vw;
      }
     
 
@@ -373,7 +389,7 @@
     }
 
     .headingholly {
-        position: absolute;
+        /* position: absolute; */
         left: 28vw;
     }
 
@@ -383,7 +399,7 @@
     }
 
     .hollypara {
-        position: absolute;
+        /* position: absolute; */
         top: 54vh;
         width: 82vw;
         font-size: 1em;
@@ -400,7 +416,7 @@
     .hollyunderdiv {
         height: 40vh;
         width: 90vw;
-        border-bottom: 5px solid bisque;
+        border-bottom: none;
     }
 
     .underdivimage {
@@ -411,13 +427,13 @@
     }
 
     .underdivheading {
-        position: absolute;
+        /* position: absolute; */
         left: 50vw;
         width: 40vw;
     }
 
     .underdivpara {
-        position: absolute;
+        /* position: absolute; */
         left: 51vw;
         top: 15vh;
         font-weight: bold;
@@ -431,12 +447,12 @@
         margin-left: 5vw;
         height: 40vh;
         width: 90vw;
-        border-bottom: 5px solid beige;
+        border-bottom: none;
     }
 
     .toppp {
         margin: auto;
-        position: relative;
+        /* position: relative; */
         font-size: 2em;
         width: 60vw;
         left: 5vw;
@@ -449,12 +465,12 @@
     }
 
     .underdivheadingtwo {
-        position: absolute;
+        /* position: absolute; */
         left: 48vw;
     }
 
     .underdivparatwo {
-        position: absolute;
+        /* position: absolute; */
         font-weight: bold;
         left: 48vw;
         top: 12vh;
@@ -471,7 +487,7 @@
 
     .topss {
         margin: auto;
-        position: relative;
+        /* position: relative; */
         font-size: 0.5em;
         width: 30vw;
         left: 10vw;
@@ -492,7 +508,7 @@
 
     .logosholly {
         flex-direction: column;
-        position: relative;
+        /* position: relative; */
         left: 22vw;
         top: 1vh;
         gap: 4px;
@@ -502,7 +518,7 @@
     .gotonavholly {
         display: flex;
         flex-direction: column;
-        position: relative;
+        /* position: relative; */
         left: 15vw;
         width: 12vh;
         height: 8vh;
@@ -511,20 +527,20 @@
 
     .logooneholly {
         height: 3vh;
-        position: relative;
+        /* position: relative; */
         left: -3.5vw;
         top: 1vh;
     }
 
     .location {
-        position: absolute;
+        /* position: absolute; */
         left: 5vw;
         top: 4vh;
     }
 
     .locholly {
         font-weight: bold;
-        position: absolute;
+        /* position: absolute; */
         top: 5vh;
         left: 8vw;
         font-size: 0.6em;
@@ -533,7 +549,7 @@
 
     .logoonephoneholly {
         height: 2.5vh;
-        position: relative;
+        /* position: relative; */
         right: 41.5vw;
         top: 13vh;
         color: aliceblue;
@@ -544,7 +560,7 @@
 
     .phoholly {
         font-weight: bold;
-        position: absolute;
+        /* position: absolute; */
         top: 13vh;
         font-size: 0.8em;
         left: 8vw;
@@ -639,7 +655,7 @@
         left:5vw;
         height: 40vh;
         width: 90vw;
-        border-bottom: 5px solid beige;
+        border-bottom: none;
     }
 
     .underdivimagetwobolly {
@@ -717,7 +733,7 @@
     .bollyunderdiv {
         height: 35vh;
         width: 90vw;
-        border-bottom: 5px solid bisque;
+        border-bottom: none;
         position: relative;
         left: 5vw;
     }
@@ -867,7 +883,7 @@
     .foodunderdiv {
         height: 40vh;
         width: 90vw;
-        border-bottom: 5px solid bisque;
+        border-bottom: none;
         position: relative;
         left: 5vw;
     }
@@ -1318,7 +1334,7 @@
     .techunderdiv {
         height: 40vh;
         width: 90vw;
-        border-bottom: 5px solid bisque;
+        border-bottom: none;
         position: relative;
         left: 2vh;
     }
@@ -1501,7 +1517,7 @@
     }
 }
 
-
+/* -------------------------------------Tab view---------------------------------------- */
 @media only screen and (min-width:500px) and (max-width:1000px) {
 
 
@@ -1541,7 +1557,7 @@
 
 
     .hambergerlinksShows {
-        display: block;
+        display: none;
     }
 
 
@@ -1562,11 +1578,12 @@
         position: relative;
         font-size: 5em;
         width:99vw;
+        background-color: #0a0af9;
     }
 
    
     .navtwo{
-        width: 80vw;
+        width: 100vw;
         margin: auto;
         overflow: hidden;
     }
@@ -1608,8 +1625,10 @@
 
 
     .namecard {
-        font-size: 3    em;
+        font-size: 3em;
         font-weight: bold;
+        margin-top:50px;
+        top:-10vw;
     }
 
 
@@ -1655,6 +1674,7 @@
         height: 75vh;
         overflow: hidden;   
         box-sizing: border-box;  
+    
     }
 
     .parahome {
@@ -1680,12 +1700,13 @@
     }
 
     .latest {
-        margin: auto;
+        /* margin: auto; */
         position: relative;
         left: 5vw;
         width: 40vw;
         font-size: 3em;
         font-weight: bold;
+        margin-top: 50%;
     }
 
     .imageone {
@@ -1696,7 +1717,7 @@
     .paraone {
         width: 38vw;
         height: 20vh;
-        position: relative;
+        /* position: relative; */
         left: 52vw;
         font-size: 1em;
         font-weight: bold;
@@ -1787,6 +1808,7 @@
         width: 40vw;
         font-weight: bold;
         font-size: 1.5em;
+       
 
     }
 
@@ -1989,7 +2011,7 @@
         margin-left: 10vw;
         height: 40vh;
         width: 90vw;
-        border-bottom: 5px solid beige;
+        border-bottom: none;
     }
 
     .toppp {
@@ -2190,7 +2212,7 @@
         left: 5vw;
         height: 40vh;
         width: 90vw;
-        border-bottom: 5px solid beige;
+        border-bottom: none;
 
     }
 
@@ -2425,7 +2447,7 @@
     .foodunderdiv {
         height: 45vh;
         width: 90vw;
-        border-bottom: 5px solid bisque;
+        border-bottom: none;
         position: relative;
         left: 5vw;
     }
@@ -2476,7 +2498,7 @@
         left: 5vw;
         height: 42vh;
         width: 90vw;
-        border-bottom: 5px solid beige;
+        border-bottom: none;
 
     }
 
